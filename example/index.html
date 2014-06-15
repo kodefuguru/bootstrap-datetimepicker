@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Bootstrap Datepicker for Knockout Example</title>
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-datetimepicker.css">
+    </head>
+    <body>
+        <header role="banner">
+            <nav class="navbar navbar-inverse" role="navigation">
+                <div class="container">                
+                    <div class="navbar-header">
+                    <a class="navbar-brand" href="#">Bootstrap Datepicker for Knockout</a>
+                    </div>
+                    <div class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav">
+                            <li><a href="#">Example 1</a></li>
+                            <li><a href="#">Example 2</a></li>
+                            <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Resources<b class="caret"></b></a>
+                                    <ul class="dropdown-menu">
+                                    <li><a href="http://getbootstrap.com/">Bootstrap Website</a></li>
+                                    <li><a href="http://knockoutjs.com/">Knockout Website</a></li>
+                                    </ul>
+                                </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+        <article class="container">
+            <header><h1 class="page-header">Example 1 <small>Days Difference </small></h1></header>
+            <div class="form-group">
+                <label for="firstdate">First Date</label>
+                <div class="input-group">
+                    <input id="firstdate" class="form-control" type="text" data-bind="datevalue: first">
+                    <span class="input-group-addon glyphicon glyphicon-calendar"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="seconddate">Second Date</label>
+                <div class="input-group">
+                    <input id="seconddate" class="form-control" type="text" data-bind="datevalue: second">
+                    <span class="input-group-addon glyphicon glyphicon-calendar"></span>
+                </div>
+            </div>
+            <p class="lead"><span data-bind="text: days"></span> Days Apart</p>
+        </article>
+        </main>
+        <script src="js/jquery-1.10.2.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/knockout-3.0.0.js"></script>
+        <script src="js/moment.js"></script>
+        <script src="../src/js/bootstrap-datetimepicker.js"></script>
+        <script src="../src/js/bootstrap-datetimepicker-ko.js"></script>
+        <script src="js/app.js"></script>
+  </body>    
+</html>
